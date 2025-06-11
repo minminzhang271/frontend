@@ -1,0 +1,51 @@
+ 
+ @import "@/styles/index.module.scss";
+ .footer-wrap  {
+  .footer {
+    height: 440px ;
+    background: $primary-color;
+    opacity: 0.82;
+     
+   
+    .footer-content {
+      @include main-width;
+      height: 100%;
+      margin: 0 auto;
+      @include flex-between;
+
+      .footer-item {
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          color: #fff;
+        }
+        ul {
+          margin-top: 20px;
+          li {
+            margin-bottom: 10px;
+            a {
+              font-size: 14px;
+              color: #fff;
+            }
+          }
+        }
+      
+      }
+    }
+
+  }
+
+  .copyright {
+    height: 80px;
+    background: $primary-color;
+    .copyright-text {
+      @include main-width;
+      height: 100%;
+      margin: 0 auto;
+      color: #fff;
+      @include flex-center;
+    }
+  
+  }
+}
+

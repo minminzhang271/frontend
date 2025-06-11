@@ -1,0 +1,29 @@
+
+.blockWrap {
+  // background-color: #F4F0F8;
+  .block {
+    @include main-width;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 16px 0;
+    .blockTitle {
+      color: #232536;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 48px; /* 133.333% */
+      height: 48px;
+      // margin-bottom: 16px;
+ 
+      
+    }
+    .blockCard {
+      width: 732px;
+      
+    }
+    .blockList {
+      width: 518px;
+    }
+  }
+}
+ 

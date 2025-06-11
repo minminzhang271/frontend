@@ -1,0 +1,17 @@
+ 
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.container {
+  @include flex-center;
+  // background-color: $primary-color;
+ 
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+
+
+

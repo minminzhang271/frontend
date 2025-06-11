@@ -1,0 +1,70 @@
+ 
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+@import "@/styles/index.module.scss";
+
+.banner-wrap  {
+  background-color: #F4F0F8;
+  .banner {
+    @include main-width;
+    @include flex-between;
+    padding: 32px 0;
+    .banner-info {
+      width: 624px; 
+      .tag {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px; /* 125% */
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+      .title {
+        color: #232536;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 48px; /* 133.333% */
+        letter-spacing: -2px;
+        margin-top: 20px;
+      }
+      .author {
+        color: #4C4C4C;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 16px 0;
+        span {
+          color: #592EA9;
+        }
+      }
+      .desc {
+        color: #6D6E76;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+        padding-bottom: 32px;
+      }
+      .banner-button {
+        @include flex-center;
+        width: 208px;
+        height: 56px;
+        background-color: #FFD050;
+        color: #232536;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px; /* 133.333% */
+        border-radius: 0;
+      }
+    }
+    .banner-img {
+      width: 516px;
+      height: 360px;
+      img {
+      width: 100%;
+      height: 100%;
+      }
+    }
+  }
+
+  
+}

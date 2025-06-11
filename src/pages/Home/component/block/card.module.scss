@@ -1,0 +1,43 @@
+.card {
+  border: 1px solid rgba(109,110,118, 10%);
+  padding: 32px;
+  .cardImg {
+    width: 668px;
+    height: 348px;
+    
+  }
+
+  .cardInfo {
+
+    color:  #4C4C4C;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    margin-top: 32px;
+    .cardInfoAuthor {
+      color: #592EA9;
+    }
+    
+  }   
+
+  .cardContent {
+     padding-top: 6px;
+     padding-bottom: 16px;
+    .title {
+      color: #232536;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 40px; /* 142.857% */
+      height: 40px;
+      
+    }
+    .description {
+      @include ellipsis(2);
+      color: #6D6E76;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// src/styles/_mixins.scss
+@use 'variables' as *;  // 如果 mixins 需要使用 variables 中的变量
+
+
+@mixin flex-start{
+  display: flex;
+  // align-items: center;
+  justify-content: flex-start;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+
+@mixin main-width {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin ellipsis ($line: 2) {
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line; /* 这里是超出几行省略 */
+  overflow: hidden;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: 576px) { @content; }
+  }
+  // ... 其他断点
+}
+
+
+

@@ -1,0 +1,33 @@
+.listitem {
+   padding: 24px 32px;
+   height: 125px;
+   background-color: #fff;
+   border-bottom: 1px solid rgba(109,110,118, 10%);
+   &.active , &:hover{
+    background-color: #FBF6EA;
+  
+  }
+  .listitemInfo {
+    color: #4C4C4C;
+
+    font-size: 14px;
+
+    font-weight: 500;
+    line-height: 20px;
+    /* 142.857% */
+    height: 20px;
+
+
+  }
+
+  .listitemContent {
+    color: #232536;
+    /* Heading H4 */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    padding-top: 8px;
+  
+  }
+
+}
