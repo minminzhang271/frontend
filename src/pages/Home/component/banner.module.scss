@@ -1,8 +1,8 @@
  
-@use "@/styles/variables" as *;
-@use "@/styles/mixins" as *;
+// @use "@/styles/variables" as *;
+// @use "@/styles/mixins" as *;
 
-@import "@/styles/index.module.scss";
+@use "@/styles/index.module.scss";
 
 .banner-wrap  {
   background-color: #F4F0F8;

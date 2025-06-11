@@ -2,7 +2,7 @@
 // @use "@/styles/variables" as *;
 // @use "@/styles/mixins" as *;
 
-@import "@/styles/index.module.scss";
+@use "@/styles/index.module.scss";
 .header-wrap {
   height: 80px;
   &.bg-color {
