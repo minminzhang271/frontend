@@ -1,1 +1,0 @@
-import{j as s}from"./index-C3P2jQ5g.js";import{I as n}from"./index-DEq2fO8H.js";import"./index-DW_MHI2K.js";function d(){const a=o=>{console.log("上传成功:",o.data)},l=async o=>{console.log("上传失败:",o)};return s.jsxs("div",{children:[s.jsx("h1",{children:"About"}),s.jsx(n,{onUploadSuccess:a,onUploadFail:l})]})}export{d as default};

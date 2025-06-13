@@ -42,7 +42,7 @@ const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
       async function getData() {
         try {
-          const response = await fetch(`http://localhost:3001/api/posts/${id}`);
+          const response = await fetch(`${VITE_BASE_URL}/api/posts/${id}`);
           const data = await response.json();
           const { content, title, description, cover, category_id, category_name, author, updated_at } = data;
           setFormData({
